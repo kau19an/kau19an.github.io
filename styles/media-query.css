@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Laptops/desktops */
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    /* To-do */
+}
+
+/* Large laptops and desktops, TVs */
+@media screen and (min-width: 1200px) { 
+    /* To-do */
+}

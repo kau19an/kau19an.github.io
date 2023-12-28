@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial • Faariaz</title>
+    <link rel="stylesheet" href="styles/default.css" media="all">
+    <link rel="stylesheet" href="styles/media-query.css">
+    <link rel="shortcut icon" href="medias/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7cdbf6fef5.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Página pessoal, portfólio e mini-blog do desenvolvedor Kauan Farias.">
+    <meta name="keywords" content="portfolio, Kauan Farias, Faariaz, development, coding, personal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Página inicial">
+    <meta property="og:site_name" content="Faariaz">
+    <meta property="og:description" content="Página pessoal, portfólio e mini-blog do desenvolvedor Kauan Farias.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kau19an.github.io/">
+    <!-- <meta property="og:image" content="PREVIEW IMAGE FOR SOCIAL MEDIAS HERE"> -->
+    <meta name="author" content="Kauan Farias (Faariaz)">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <header>
+        <h1>Kauan Farias</h1>
+        <nav>
+            <li><a href="#" target="_self">início</a></li>
+            <li><a href="#" target="_self">sobre mim</a></li>
+            <li><a href="#" target="_self">portfólio</a></li>
+            <li><a href="#" target="_self">habilidades</a></li>
+            <li><a href="#" target="_self">mini-blog</a></li>
+            <li><a href="#" target="_self">contate-me</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section id="greetings">
+            <h2>oioi !</h2>
+            <p>seja bem-vindo(a) a minha página :) aqui você pode conhecer um pouco mais sobre mim, ver meus projetos e habilidades como dev, e também artigos aleatórios sobre o que estiver na minha cabeça. sinta-se a vontade e não repara na bagunça!</p>
+            <p>as minhas redes sociais estão todas abaixo caso você quiser dar uma passadinha por lá!</p>
+            <ul id="socials">
+                <li><a href="https://facebook.com/kau19an" target="_blank" rel="external"><abbr title="Facebook"><i class="fa-brands fa-facebook fa-2xl"></i></abbr></a></li>
+                <li><a href="https://github.com/kau19an" target="_blank" rel="external"><abbr title="GitHub"><i class="fa-brands fa-github fa-2xl"></i></abbr></a></li>
+                <li><a href="https://instagram.com/kau19an" target="_blank" rel="external"><abbr title="Instagram"><i class="fa-brands fa-instagram fa-2xl"></i></abbr></a></li>
+                <li><a href="https://snapchat.com/add/kau19an" target="_blank" rel="external"><abbr title="Snapchat"><i class="fa-brands fa-snapchat fa-2xl"></i></abbr></a></li>
+                <li><a href="https://tiktok.com/@kau19an" target="_blank" rel="external"><abbr title="TikTok"><i class="fa-brands fa-tiktok fa-2xl"></i></abbr></a></li>
+                <li><a href="https://x.com/kau19an" target="_blank" rel="external"><abbr title="𝕏 (Twitter)"><i class="fa-brands fa-x-twitter fa-2xl"></i></abbr></a></li>
+                <li><a href="https://youtube.com/@Faariaz" target="_blank" rel="external"><abbr title="YouTube"><i class="fa-brands fa-youtube fa-2xl"></i></abbr></a></li>
+            </ul>
+        </section>
+        <section id="cev">
+            <h2>curso em vídeo</h2>
+            <p>no momento, ando fazendo os cursos do <a href="https://cursoemvideo.com/" target="_blank" rel="external">Curso em Vídeo</a> com o Guanabara! até então, tenho dois concluídos:</p>
+            <ul>
+                <li>HTML5 <i class="fa-brands fa-html5"></i> e CSS3 <i class="fa-brands fa-css3-alt"></i></li>
+                <li>Git <i class="fa-brands fa-git-alt"></i> e GitHub <i class="fa-brands fa-github"></i></li>
+            </ul>
+            <p>e um em andamento:</p>
+            <ul>
+                <li>JavaScript <i class="fa-brands fa-js"></i></li>
+            </ul>
+            <p>se quiser dar uma olhada no que aprendi em cada, vá na página de "habilidades". pretendo prosseguir com PHP <i class="fa-brands fa-php"></i>, Python <i class="fa-brands fa-python"></i>, MySQL <i class="fa-solid fa-database"></i> e outros que vou esbarrando no caminho. enquanto isso, sigo reforçando meus conhecimentos explorando as que já conheço e procurando me desafiar cada dia mais!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Faariaz (dez. 2023–<span id="currentYear"></span>) - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
