@@ -21,7 +21,7 @@ header {
     padding: 20px;
 }
 header > h1 {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -32,8 +32,8 @@ span#burger {
     cursor: pointer;
     display: block;
     margin: auto;
-    max-width: 66px;
-    padding: 2px 5px;
+    max-width: 83px;
+    padding: 5px 10px;
     text-align: center;
 }
 span#burger > i,
@@ -42,10 +42,10 @@ span#burger > p {
 }
 span#burger > p {
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 1.2em;
     padding-left: 5px;
     text-transform: uppercase;
-    transform: translateY(0px);
+    transform: translateY(2px);
 }
 
 /* Header menu */
@@ -54,6 +54,7 @@ nav#menu {
     margin-top: 10px;
 }
 nav#menu > li {
+    font-size: 1.2em;
     list-style-type: none;
     padding: 5px 0px;
     text-align: center;
