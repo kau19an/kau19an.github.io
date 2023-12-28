@@ -11,7 +11,7 @@
     <meta name="description" content="Página pessoal, portfólio e mini-blog do desenvolvedor Kauan Farias.">
     <meta name="keywords" content="portfolio, Kauan Farias, Faariaz, development, coding, personal">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="Página inicial">
+    <meta property="og:title" content="Página inicial • Faariaz">
     <meta property="og:site_name" content="Faariaz">
     <meta property="og:description" content="Página pessoal, portfólio e mini-blog do desenvolvedor Kauan Farias.">
     <meta property="og:type" content="website">
@@ -23,7 +23,8 @@
 <body>
     <header>
         <h1>Kauan Farias</h1>
-        <nav>
+        <span id="burger" onclick="clickMenu()"><i class="fa-solid fa-bars fa-xs"></i><p>Menu</p></span>
+        <nav id="menu">
             <li><a href="#" target="_self">início</a></li>
             <li><a href="#" target="_self">sobre mim</a></li>
             <li><a href="#" target="_self">portfólio</a></li>
@@ -69,6 +70,14 @@
 
     <script>
         document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+        function clickMenu() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
     </script>
 </body>
 </html>
