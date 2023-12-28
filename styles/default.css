@@ -90,23 +90,42 @@ main {
 }
 
 section > h2 {
-    font-size: 1.5em;
+    color: rgb(179, 179, 179);
+    font-size: 1.7em;
 }
-
 section > p {
+    color: whitesmoke;
     line-height: 20px;
     text-align: justify;
     margin-bottom: 10px;
 }
 
-section#cev > ul > li {
-    list-style-type: none;
+section#greetings {
+    padding-bottom: 10px;
 }
-
-ul#socials > li {
+section#greetings > ul#socials {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+section#greetings > ul#socials > li {
     display: inline-block;
     list-style-type: none;
     padding-left: 5px;
+}
+
+section#greetings > ul#socials > li > a {
+    color: whitesmoke;
+}
+section#greetings > ul#socials > li > a:hover {
+    color: rgba(245, 245, 245, 0.699);
+}
+
+section#cev {
+    padding-top: 20px;
+}
+section#cev > ul > li {
+    color: whitesmoke;
+    list-style-type: none;
 }
 
 /* Footer */
