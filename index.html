@@ -21,8 +21,8 @@
     <meta name="robots" content="index, follow">
 </head>
 <body>
-    <header>
-        <h1>Kauan Farias</h1>
+    <header id="header">
+        <h1>kauan</h1>
         <p>dev e gamer nas horas vagas</p>
         <span id="burger" onclick="clickMenu()"><i class="fa-solid fa-bars fa-lg"></i><p>Menu</p></span>
         <nav id="menu">
@@ -74,9 +74,13 @@
 
         function clickMenu() {
             if (menu.style.display == 'none') {
-                menu.style.display = 'block'
+                menu.style.display = 'block';
+                header.style.height = '270px';
+                burger.style.background = 'rgb(113, 113, 113)';
             } else {
-                menu.style.display = 'none'
+                menu.style.display = 'none';
+                header.style.height = '60px';
+                burger.style.background = '';
             }
         }
     </script>

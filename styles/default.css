@@ -10,6 +10,14 @@
     padding: 0px;
 }
 
+:root {
+    --color1: #775D98;
+    --color2: #FFE047;
+    --color3: #3F3F3F;
+    --color4: #3AAED8;
+    --color5: #FC6722;
+}
+
 body {
     background-color: rgb(49, 49, 49);
     height: 100vh;
@@ -21,33 +29,35 @@ header {
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 7px 2px -1px #464646;
     display: block;
+    height: 60px;
     padding: 20px;
     margin: auto;
-    max-width: 300px;
+    max-width: 600px;
 }
 header > h1 {
     color: whitesmoke;
     font-size: 2.5em;
-    padding: 5px;
-    text-align: center;
+    padding: 5px 0px;
+    text-align: left;
 }
 header > p {
     color: whitesmoke;
-    text-align: center;
+    font-size: 1.1em;
+    text-align: left;
     padding-bottom: 10px;
     transform: translateY(-3px);
 }
 
 /* Burger menu button */
 span#burger {
-    background-color: rgb(113, 113, 113);
+    border: 2px solid rgb(113, 113, 113);
     border-radius: 10px;
     cursor: pointer;
     display: block;
-    margin: auto;
     max-width: 83px;
     padding: 5px 10px;
     text-align: center;
+    transform: translate(130px, -70px);
 }
 span#burger > i,
 span#burger > p {
@@ -65,7 +75,7 @@ span#burger > p {
 /* Header menu */
 nav#menu {
     display: none;
-    margin-top: 10px;
+    transform: translateY(-20px);
 }
 nav#menu > li {
     font-size: 1.2em;
@@ -73,8 +83,12 @@ nav#menu > li {
     padding: 5px 0px;
     text-align: center;
 }
+
 nav#menu > li > a {
     color: whitesmoke;
+}
+nav#menu > li > a:hover {
+    color: var(--color4);
 }
 
 /* Main content */
@@ -84,13 +98,13 @@ main {
     box-shadow: 0px 7px 2px -1px #464646;
     display: block;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     max-width: 600px;
     padding: 15px;
 }
 
 section > h2 {
-    color: rgb(179, 179, 179);
+    color: var(--color2);
     font-size: 1.7em;
 }
 section > p {
@@ -117,7 +131,7 @@ section#greetings > ul#socials > li > a {
     color: whitesmoke;
 }
 section#greetings > ul#socials > li > a:hover {
-    color: rgba(245, 245, 245, 0.699);
+    color: var(--color4);
 }
 
 section#cev {
@@ -125,7 +139,23 @@ section#cev {
 }
 section#cev > ul > li {
     color: whitesmoke;
-    list-style-type: none;
+    list-style-position: inside;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+section#cev a {
+    background-color: var(--color1);
+    border-radius: 5px;
+    color: white;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+section#cev a::after {
+    content:'\00A0\0279A';
+}
+section#cev a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
