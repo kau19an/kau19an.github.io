@@ -34,12 +34,18 @@ header {
     margin: auto;
     max-width: 600px;
 }
+
 header > h1 {
-    color: whitesmoke;
     font-size: 2.5em;
     padding: 5px 0px;
     text-align: left;
 }
+header > h1 > a {
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 header > p {
     color: whitesmoke;
     font-size: 1.1em;
@@ -57,7 +63,7 @@ span#burger {
     max-width: 83px;
     padding: 5px 10px;
     text-align: center;
-    transform: translate(130px, -70px);
+    transform: translate(125px, -75px);
 }
 span#burger > i,
 span#burger > p {
@@ -106,6 +112,7 @@ main {
 section > h2 {
     color: var(--color2);
     font-size: 1.7em;
+    margin-bottom: 5px;
 }
 section > p {
     color: whitesmoke;
@@ -117,51 +124,65 @@ section > p {
 section#greetings {
     padding-bottom: 10px;
 }
-section#greetings > ul#socials {
+ul#socials {
     text-align: center;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px;
 }
-section#greetings > ul#socials > li {
+ul#socials > li {
     display: inline-block;
     list-style-type: none;
     padding-left: 5px;
 }
-
-section#greetings > ul#socials > li > a {
+ul#socials > li > a {
     color: whitesmoke;
 }
-section#greetings > ul#socials > li > a:hover {
-    color: var(--color4);
+
+/* Social media :hover colors */
+i#fb:hover {
+    color: #1877F2;
+}
+i#ig:hover {
+    color: #DA2FB5;
+}
+i#sc:hover {
+    color: #FFFC00;
+}
+i#x-twt:hover {
+    color: black;
+}
+i#yt:hover {
+    color: #FF0000;
 }
 
 section#cev {
     padding-top: 20px;
 }
-section#cev > ul > li {
+
+ul > li {
     color: whitesmoke;
+    line-height: 17px;
     list-style-position: inside;
     padding-bottom: 10px;
     padding-left: 20px;
 }
 
-section#cev a {
+a.link {
     background-color: var(--color1);
     border-radius: 5px;
     color: white;
     padding: 2px 5px;
     text-decoration: none;
 }
-section#cev a::after {
+a.link::after {
     content:'\00A0\0279A';
 }
-section#cev a:hover {
+a.link:hover {
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
     background-color: rgb(63, 63, 63);
-    box-shadow: 0px 7px 2px -1px #464646;
     color: whitesmoke;
     font-size: 0.8em;
     padding: 10px;
