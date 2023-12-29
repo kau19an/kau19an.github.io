@@ -1,11 +1,28 @@
 @charset "UTF-8";
 
-/* Laptops/desktops */
-@media screen and (min-width: 992px) and (max-width: 1200px) { 
-    /* To-do */
-}
+/* Laptops/desktops, large laptops and desktops, TVs */
+@media screen and (min-width: 992px) { 
+    header {
+        height: 110px;
+    }
+    
+    span#burger {
+        display: none;
+    }
+    
+    nav#menu {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+    nav#menu > li {
+        display: inline-block;
+    }
+    nav#menu > li > a {
+        padding: 5px;
+    }
 
-/* Large laptops and desktops, TVs */
-@media screen and (min-width: 1200px) { 
-    /* To-do */
+    main {
+        max-width: 800px;
+    }
 }
