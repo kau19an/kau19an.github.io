@@ -1,5 +1,6 @@
 import './App.css'
 import logo from '../assets/logo-500.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
   return (
